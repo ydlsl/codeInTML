@@ -5,6 +5,7 @@ import Main from './components/fabric'
 import Move from './components/move'
 import Draw from './components/draw'
 import ChangeBox from './components/changeBox'
+import QrCode from './components/qrcode'
  
 export default createRouter({
   history: createWebHistory(),
@@ -13,6 +14,7 @@ export default createRouter({
     { path: '/fabric', name: 'Main', component: Main },
     { path: '/move',  name: 'Move', component: Move},
     { path: '/draw',  name: 'Draw', component: Draw},
+    { path: '/qrcode',  name: 'qrcode', component: QrCode},
     { path: '/changeBox', name: 'changeBox', component: ChangeBox },
   ]
 })
