@@ -31,11 +31,10 @@ export default {
     var canvas= div.getElementsByTagName('canvas')[0];
     let data = canvas.toDataURL('image/jpg')
 
-    debugger
+    
     var img = document.getElementById('imgtest')
     img.src = data
 
-    debugger
     
   },
   methods:{

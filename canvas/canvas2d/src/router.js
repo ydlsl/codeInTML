@@ -6,6 +6,7 @@ import Move from './components/move'
 import Draw from './components/draw'
 import ChangeBox from './components/changeBox'
 import QrCode from './components/qrcode'
+import Upload from './elements/upload'
  
 export default createRouter({
   history: createWebHistory(),
@@ -16,5 +17,8 @@ export default createRouter({
     { path: '/draw',  name: 'Draw', component: Draw},
     { path: '/qrcode',  name: 'qrcode', component: QrCode},
     { path: '/changeBox', name: 'changeBox', component: ChangeBox },
+
+
+    { path: '/upload', name: 'upload', component: Upload },
   ]
 })

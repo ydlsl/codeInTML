@@ -3,7 +3,7 @@
     <div>
     基本動畫
     </div>
-    <canvas id='canvas'>
+    <canvas id='canvas_move'>
     </canvas>
   </div>
 </template>
@@ -26,11 +26,14 @@ export default {
       sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
       moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
       earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
-      window.requestAnimationFrame(draw);
+      window.requestAnimationFrame(draw)
     }
 
     function draw() {
-      var canvas = document.getElementById('canvas')
+      var canvas = document.getElementById('canvas_move')
+      if(!canvas){
+        return
+      }
       canvas.width = 300
       canvas.height = 300
       var ctx = canvas.getContext('2d');
