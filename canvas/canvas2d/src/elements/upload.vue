@@ -1,5 +1,22 @@
 <template>
 <div>
+  <el-select
+    v-model="value"
+    multiple
+    filterable
+    allow-create
+    default-first-option
+    placeholder="请选择文章标签"
+  >
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value"
+    >
+    </el-option>
+  </el-select>
+  <i class="el-icon-plus"></i>
   <el-upload action="#" list-type="picture-card" :auto-upload="false">
   <template #default>
     <i class="el-icon-plus"></i>
@@ -45,6 +62,21 @@
         dialogImageUrl: '',
         dialogVisible: false,
         disabled: false,
+         options: [
+          {
+            value: 'HTML',
+            label: 'HTML',
+          },
+          {
+            value: 'CSS',
+            label: 'CSS',
+          },
+          {
+            value: 'JavaScript',
+            label: 'JavaScript',
+          },
+        ],
+        value: [],
       }
     },
     methods: {
