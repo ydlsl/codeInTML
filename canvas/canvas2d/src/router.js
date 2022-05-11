@@ -8,6 +8,7 @@ import ChangeBox from './components/changeBox'
 import QrCode from './components/qrcode'
 import Upload from './elements/upload'
 import Scale from './components/scale.vue'
+import Video from './components/video'
  
 export default createRouter({
   history: createWebHistory(),
@@ -20,6 +21,7 @@ export default createRouter({
     { path: '/changeBox', name: 'changeBox', component: ChangeBox },
 
     { path: '/scale',  name: 'scale', component: Scale},
+    { path: '/video',  name: 'video', component: Video},
 
     { path: '/upload', name: 'upload', component: Upload },
   ]
