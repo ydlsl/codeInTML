@@ -1,0 +1,17 @@
+{
+	"id": "yd-uniapp",
+	"name": "yd-uniapp",
+	"displayName": "yd-uniapp 示例工程",
+	"version": "1.0.0",
+	"description": "uni-app 框架示例，一套代码，弄死你",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+        "hello-uniapp",
+        "uni-app",
+        "uni-ui",
+        "示例工程"
+    ],
+	"author": "yd"
+}
