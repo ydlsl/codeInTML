@@ -1,0 +1,9 @@
+2022-07-14 16:13:40,103 INFO 872063 [Timer] /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 44179898ms at 2022-07-15 04:30:00.001
+2022-07-14 16:13:40,103 INFO 872063 [Timer] /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 27979897ms at 2022-07-15 00:00:00.000
+2022-07-14 16:13:40,104 INFO 872063 [Timer] /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 27980897ms at 2022-07-15 00:00:01.001
+2022-07-14 16:13:40,059 INFO 872075 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-07-14 16:13:40,059 INFO 872075 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-07-14 16:13:40,059 INFO 872075 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-07-14 16:16:02,181 INFO 872432 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-07-14 16:16:02,181 INFO 872432 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-07-14 16:16:02,181 INFO 872432 [egg-schedule]: register schedule /home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

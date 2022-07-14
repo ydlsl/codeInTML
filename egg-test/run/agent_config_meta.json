@@ -1,0 +1,270 @@
+{
+  "keys": "/home/yd/yd/self/code/codeInTML/egg-test/config/config.default.js",
+  "session": {
+    "maxAge": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-session/config/config.default.js",
+    "key": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-session/config/config.default.js",
+    "logValue": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "type": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "useSession": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "headerName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "queryName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "value": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "value": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "value": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "policy": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-watcher/config/config.default.js",
+      "development": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-schedule/config/config.default.js",
+      "file": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "files": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js",
+    "dir": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js",
+    "preload": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js",
+    "buffer": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-view/config/config.default.js",
+    "cache": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-view/config/config.default.js",
+    "mapping": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "name": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "cookies": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "proxy": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "version": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "description": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "main": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "dev": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "test": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    },
+    "author": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "license": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "egg-bin": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "HOME": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "rundir": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "notFound": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "sitefile": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "middlewares": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "httpClient": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "cacheControl": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "encoding": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "formLimit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "textLimit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "strict": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "depth": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "encoding": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "env": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "level": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "outputJSON": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "buffer": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "appLogName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "coreLogName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "agentLogName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "errorLogName": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "logging": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "port": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+      "hostname": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/home/yd/yd/self/code/codeInTML/egg-test/node_modules/egg/config/config.default.js"
+}
