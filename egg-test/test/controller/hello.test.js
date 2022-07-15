@@ -1,6 +1,7 @@
 const { app, assert } = require('egg-mock/bootstrap');
 
 describe('test/app/controller/home.test.js', () => {
+  
   it('assert pkg.name no exist', () => {
     const pkg = require('../../package.json');
     assert(pkg.name.startsWith('egg'));
