@@ -1,7 +1,5 @@
-var path = require('path')
-var fs = require('fs')
-var versionPath = './version.json'
-var versioInfo = require(versionPath)
+
+const chohoTestCode = require('./testConfig/index')
 
 module.exports = appInfo => {
   /**
@@ -10,8 +8,15 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
-  console.log('5656565656: ', versioInfo.versionTime)
-  
+  let testList = {
+    controller: {
+      exclude: ['stu']
+    }, 
+    service: {
+
+    },
+  }
+  chohoTestCode(testList)
   
   return {
     ...config,
