@@ -21,17 +21,34 @@ function adjustConfig(config){
     }
     const module = config[key];
     const moduleConfig = mochaConfig[key] = {}
-    moduleConfig.exclude = module.exclude || []
     moduleConfig.path = moduleDict[key]
     moduleConfig.files = fileHandler.getModule(moduleDict[key], true)
+    let exlist = module.exclude || []
+    exlist.map(item=>{
+      if(typeof item != 'string'){
+        throw new Error('make sure exclude mast been list with string !')
+      }
+      if(!item.includes('.js')){
+        item += '.js'
+      }
+      delete moduleConfig.files[item]
+    })
   }
   return mochaConfig
+}
+
+function getRouter(){
+  let router = {}
+  let routerPath = fileHandler.getModule('app', true)
+  routerPath = routerPath['router.js']
+  router = fileHandler.getRouterDict(routerPath)
+  return router
 }
 
 function createTestFile(config){
   let dirPath = 'tests'
   const testDict = fileHandler.getModule(dirPath)
-
+  const router = getRouter()
   for(const key in config) {
     let item = config[key]
     const testConfig = testDict[key] = {};
@@ -42,13 +59,23 @@ function createTestFile(config){
       const filePath = item.files[fileName]
       let testPath = filePath.replace('app', dirPath)
       testPath = testPath.replace('.js', '.test.js')
-      if(testConfig.files[fileName]){
-        
-        // next
-      }else{
+      const testName = fileName.replace('.js', '.test.js')
+      if(!testConfig.files[testName]){
         // create file
+        console.log('testConfig.files = ', testConfig.files)
+        console.log('fileName = ', fileName)
         fileHandler.createFile(testPath)
+        testConfig.files[fileName] = testPath
       }
+      //next
+      const { fileCode, testCode } = fileHandler.getTestCode(filePath, testPath, '@test')
+      fileHandler.correspondingFile({
+        fileCode, 
+        testCode,
+        key,
+        router,
+        testPath
+      })
     }
   }
 }
@@ -59,9 +86,6 @@ async function makeTestCode(config = {}){
   config = adjustConfig(config)
   createTestFile(config)
 
-
-  // const data = await fileHandler.readFile('app/controller/hello.js')
-  console.log(config)
 }
 
 module.exports = makeTestCode

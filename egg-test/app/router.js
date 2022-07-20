@@ -6,4 +6,5 @@ module.exports = app => {
   router.get('/show1', controller.stu.show1);
   //post请求
   router.post('/show2', controller.stu.show2);
+  router.get('/helloIndex', controller.hello.index);
 };

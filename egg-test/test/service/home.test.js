@@ -8,7 +8,7 @@ describe('test/app/controller/home.test.js', () => {
     {args: [1, 2, 3, 4], expected: 10}
   ];
   let list;
-  describe('test/service/home.test.js', () => {
+  // describe('test/service/home.test.js', () => {
     it('list = undefined', async () => {
       const ctx = app.mockContext(); // 实例得放在it内
       const res = await ctx.service.home.testForMocha(list);
@@ -23,5 +23,5 @@ describe('test/app/controller/home.test.js', () => {
         assert(res)
       });
     })
-  })
+  // })
 })

@@ -3,6 +3,7 @@ const Service = require('egg').Service;
 // 请求的封装
 class HomeService extends Service {
   // 将工作任务插入队列
+  // @test testForMocha
   async testForMocha(list = [], custom = null) {
     const { ctx, app } = this;
     app.wfRunListDic = app.wfRunListDic || {};
