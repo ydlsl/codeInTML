@@ -128,21 +128,26 @@ class FileHandler {
   /**
    * @param {*} fileCode  { index: 1 }
    * @param {*} testCode  { index: 1, test: 1 }
-   * @param {*} router    {index: {module: 'controller',method: 'get',router: "'/hello'",className: 'hello',fn: 'index'
+   * @param {*} router    {index: {module: 'controller',method: 'get',router: "'/hello'",file: 'hello',fn: 'index'
    */
   correspondingFile({fileCode, testCode, key, testPath, router}){
-
     for(let fn in fileCode){
       if(testCode[fn]){
         continue
       }
       //add fn into test
       const codeMaker = this.getCodeMaker(key)
+      let pathInfo = {}
+      if(codeMaker != 'controllerMaker'){
+        pathInfo = this.getPathCode(testPath)
+      }
       const param = {
         ...router[fn], 
-        path: testPath
+        path: testPath,
+        ...pathInfo,
+        fn
       }
-      console.log('parama = ', router)
+      console.log('parama = ', param)
       let code = this[codeMaker](param)
       this.writeFile(testPath, code)
     }
@@ -163,7 +168,7 @@ class FileHandler {
       let module = null
       info.method = methodAndRouter[0]
       info.router = methodAndRouter[1]
-      info.className = moduleAndFn[1]
+      info.file = moduleAndFn[1]
       info.fn = moduleAndFn[moduleAndFn.length - 1]?.split(')')[0]?.trim()
       module = moduleAndFn[0]?.trim()
 
@@ -180,7 +185,7 @@ class FileHandler {
     let codeList = path.split('/')
     let index = codeList.length
     index--
-    info.className = codeList[index]?.split('.')[0]
+    info.file = codeList[index]?.split('.')[0]
     index--
     info.module = codeList[index]
     return info
