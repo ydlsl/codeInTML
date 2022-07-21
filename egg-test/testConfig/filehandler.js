@@ -6,7 +6,7 @@ const serviceMaker = require('./service')
 const baseCode = require('./base')
 
 function getPath(dir) {
-  const endIndex = __dirname.lastIndexOf('/config/')
+  const endIndex = __dirname.lastIndexOf('/testConfig/')
   const rootPath = __dirname.slice(0, endIndex)
   const dirIndex = dir.lastIndexOf(rootPath)
   if(dirIndex){
