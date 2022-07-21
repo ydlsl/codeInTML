@@ -1,0 +1,21 @@
+{
+  "name": "choho-test",
+  "version": "0.0.4",
+  "description": "just test for egg mocha",
+  "main": "index.js",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov"
+  },
+  "author": "ydhit",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.36.0",
+    "egg-bin": "^5.1.2",
+    "egg-mock": "^4.2.1"
+  },
+  "keywords": [
+    "choho"
+  ]
+}
