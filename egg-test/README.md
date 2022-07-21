@@ -6,3 +6,7 @@
     引入 const { app, assert } = require('egg-mock/bootstrap');
     代码最好都在it之后写
     引入 const ctx = app.mockContext();
+
+2、webpack
+    a、babel-loader 8.x对应babel-core 7.x
+    b、babel-loader 7.x对应babel-core 6.x

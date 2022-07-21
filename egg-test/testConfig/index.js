@@ -52,7 +52,8 @@ function createTestFile(config, dirPath = 'tests'){
       if(!testConfig.files[testName]){
         // create file
         fileHandler.createFile(testPath)
-        testConfig.files[fileName] = testPath
+        testConfig.files[testName] = testPath
+        console.log('9090 = ', testConfig.files)
       }
       //next
       const { fileCode, testCode } = fileHandler.getTestCode(filePath, testPath, '@test')
@@ -73,11 +74,12 @@ async function makeTestCode(userConfig = {}){
     controller: {}, 
     service: {},
   }
-  console.log('33333333333333')
+  console.log('start make code')
   Object.assign(config, userConfig)
   config = adjustConfig(config)
   createTestFile(config, 'test')
-
+  console.log('end make')
 }
 
-module.exports = makeTestCode
+export default makeTestCode // npm
+// module.exports = makeTestCode // local

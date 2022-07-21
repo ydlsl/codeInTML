@@ -1,18 +1,29 @@
 {
-  "name": "egg-test",
+  "name": "choho-test",
   "version": "1.0.0",
   "description": "just test for egg mocha",
   "main": "index.js",
   "scripts": {
     "dev": "egg-bin dev",
     "test": "egg-bin test",
-    "cov": "egg-bin cov"
+    "cov": "egg-bin cov",
+    "build": "webpack"
   },
   "author": "ydhit",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.36.0",
     "egg-bin": "^5.1.2",
-    "egg-mock": "^4.2.1"
+    "egg-mock": "^4.2.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "keywords": [
+    "choho"
+  ],
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
   }
 }

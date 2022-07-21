@@ -5,15 +5,16 @@ const controllerMaker = require('./controller')
 const serviceMaker = require('./service')
 const baseCode = require('./base')
 
-function getPath(dir) {
-  const endIndex = __dirname.lastIndexOf('/testConfig/')
-  const rootPath = __dirname.slice(0, endIndex)
-  const dirIndex = dir.lastIndexOf(rootPath)
-  if(dirIndex){
-    return dir
-  }
-  return Path.join(rootPath, dir)
-}
+// function getPath(dir) {
+//   const endIndex = __dirname.lastIndexOf('/node_modules/')
+//   const rootPath = __dirname.slice(0, endIndex)
+//   const dirIndex = dir.lastIndexOf(rootPath)
+//   console.log('ppppp = ', __dirname, ' dir = ', dir)
+//   if(dirIndex){
+//     return dir
+//   }
+//   return Path.join(rootPath, dir)
+// }
 
 class FileHandler {
 
@@ -37,7 +38,6 @@ class FileHandler {
   }
 
   readFile(path){
-    path = getPath(path)
     let data = null
     try {
       data = fs.readFileSync(path, 'utf8')
@@ -48,7 +48,6 @@ class FileHandler {
   }
   
   writeFile(path, data){
-    path = getPath(path)
     let res = null
     try {
       if(fs.existsSync(path)){
@@ -75,9 +74,9 @@ class FileHandler {
   }
 
   createDir(path){
-    path = getPath(path)
     try {
       fs.mkdirSync(path);
+      console.log('56565 = ', path)
     } catch (error) {
       console.log('mkdirSync Err: ', error.message)
     }
@@ -87,13 +86,12 @@ class FileHandler {
     let moduleDict = {}
     let fileDict = {}
     const getModuleFromPath = ()=>{
-      const modulePath = getPath(basePath)
-      if(!fs.existsSync(modulePath)){
+      if(!fs.existsSync(basePath)){
         this.createDir(basePath)
       }
-      let files = fs.readdirSync(modulePath)
+      let files = fs.readdirSync(basePath)
       files.forEach(item=>{
-        let filepath1 = `${modulePath}/${item}`
+        let filepath1 = `${basePath}/${item}`
         let stat = fs.statSync(filepath1)
         if(stat.isFile()){
           // file
