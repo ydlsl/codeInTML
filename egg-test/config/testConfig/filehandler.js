@@ -147,7 +147,6 @@ class FileHandler {
         ...pathInfo,
         fn
       }
-      console.log('parama = ', param)
       let code = this[codeMaker](param)
       this.writeFile(testPath, code)
     }

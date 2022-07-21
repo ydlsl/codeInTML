@@ -17,9 +17,13 @@ function TestBase({router, path, fn, method = 'get'}){
     
     it('${fn}', () => {
       return app.httpRequest()
-        .${method}(${router}) // GET 请求
+        .${method}(${router}) // GET, POST 请求
+        //不给数据的情况
         .expect(200) // 期望返回的 status 200
-        .expect('这是Hello!'); // 期望返回的 body，支持 string/
+        .then(response=>{ // 期望返回的 body，支持 string
+          const res = response.Data;
+          assert(res.Code == '1002'); // 业务码应该为'0'
+        }); 
     });
   
     tests.forEach(function(item) {
@@ -51,9 +55,13 @@ function TestBase({router, path, fn, method = 'get'}){
   
 //   it('${fn}', () => {
 //     return app.httpRequest()
-//       .${method}(${router}) // GET 请求
+//       .${method}(${router}) // GET, POST 请求
+//       //不给数据的情况
 //       .expect(200) // 期望返回的 status 200
-//       .expect('这是Hello!'); // 期望返回的 body，支持 string/
+//       .then(response=>{ // 期望返回的 body，支持 string
+//         const res = response.Data;
+//         assert(res.Code == '1002'); // 业务码应该为'0'
+//       }); 
 //   });
 
 //   tests.forEach(function(item) {

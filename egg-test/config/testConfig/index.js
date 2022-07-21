@@ -1,15 +1,5 @@
-const path = require('path')
-const fs = require('fs')
-
 const FileHandler = require('./filehandler')
-const console = require('console')
-
 const fileHandler = new FileHandler()
-
-
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
 
 
 function adjustConfig(config){
@@ -45,8 +35,7 @@ function getRouter(){
   return router
 }
 
-function createTestFile(config){
-  let dirPath = 'tests'
+function createTestFile(config, dirPath = 'tests'){
   const testDict = fileHandler.getModule(dirPath)
   const router = getRouter()
   for(const key in config) {
@@ -62,8 +51,6 @@ function createTestFile(config){
       const testName = fileName.replace('.js', '.test.js')
       if(!testConfig.files[testName]){
         // create file
-        console.log('testConfig.files = ', testConfig.files)
-        console.log('fileName = ', fileName)
         fileHandler.createFile(testPath)
         testConfig.files[fileName] = testPath
       }
@@ -81,10 +68,15 @@ function createTestFile(config){
 }
 
 
-async function makeTestCode(config = {}){
-
+async function makeTestCode(userConfig = {}){
+  let config = {
+    controller: {}, 
+    service: {},
+  }
+  console.log('33333333333333')
+  Object.assign(config, userConfig)
   config = adjustConfig(config)
-  createTestFile(config)
+  createTestFile(config, 'test')
 
 }
 

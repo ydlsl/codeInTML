@@ -6,6 +6,8 @@ class HomeService extends Service {
   // @test testForMocha
   async testForMocha(list = [], custom = null) {
     const { ctx, app } = this;
+    console.log('3333 = ', ctx.request.query)
+    console.log('4444 = ', ctx.request.body)
     app.wfRunListDic = app.wfRunListDic || {};
     if(!list.length){
       return false

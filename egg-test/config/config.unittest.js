@@ -8,7 +8,7 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
-  let testList = {
+  const test = {
     controller: {
       exclude: ['stu']
     }, 
@@ -16,7 +16,7 @@ module.exports = appInfo => {
 
     },
   }
-  chohoTestCode(testList)
+  chohoTestCode(test)
   
   return {
     ...config,
