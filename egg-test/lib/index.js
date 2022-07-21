@@ -81,5 +81,5 @@ async function makeTestCode(userConfig = {}){
   console.log('end make')
 }
 
-export default makeTestCode // npm
-// module.exports = makeTestCode // local
+// export default makeTestCode // webpack npm
+module.exports = makeTestCode // local & no webpack

@@ -51,9 +51,10 @@ class FileHandler {
     let res = null
     try {
       if(fs.existsSync(path)){
-        data = this.readFile(path) + '\n' + data
+        fs.appendFileSync(path, '\n' + data)
+      }else{
+        fs.writeFileSync(path, data)
       }
-      fs.writeFileSync(path, data, 'utf-8')
       // var writeStream = fs.createWriteStream(path);
       // writeStream.write(data);
       // writeStream.end();

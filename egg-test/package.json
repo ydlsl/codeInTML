@@ -1,6 +1,6 @@
 {
   "name": "choho-test",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "just test for egg mocha",
   "main": "index.js",
   "scripts": {

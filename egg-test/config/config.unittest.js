@@ -1,5 +1,5 @@
 
-const chohoTestCode = require('../testConfig/index')
+const chohoTestCode = require('../lib/index')
 
 module.exports = appInfo => {
   /**

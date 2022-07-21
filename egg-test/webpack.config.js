@@ -5,8 +5,8 @@ const config = {
     target: 'node',
     mode: 'none', // 因为默认是production 默认会进行压缩
     entry: {
-        "choho-test": "./testConfig/index.js",
-        "choho-test.min": "./testConfig/index.js"
+        "choho-test": "./lib/index.js",
+        "choho-test.min": "./lib/index.js"
     },
     output: {
         path: path.join(__dirname, './dist/'), //打包的结果文件生成的目录要是绝对路径
