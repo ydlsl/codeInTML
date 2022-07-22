@@ -3,11 +3,16 @@ const fs = require('fs')
 
 const controllerMaker = require('./controller')
 const serviceMaker = require('./service')
+const extendMaker = require('./extend')
 const baseCode = require('./base')
 
 function getPath(dir) {
   let rootPath = __dirname
-  const endIndex = __dirname.lastIndexOf('/node_modules') 
+  let basePath = '/node_modules'
+  if(process.env.PWD?.includes('egg-npm-makes')){
+    basePath = '/lib'
+  }
+  const endIndex = __dirname.lastIndexOf(basePath) 
   if(endIndex != -1){
     rootPath = __dirname.slice(0, endIndex)
   }
@@ -24,13 +29,14 @@ class FileHandler {
   constructor() {
 		this.controllerMaker = controllerMaker
     this.serviceMaker = serviceMaker
+    this.extendMaker = extendMaker
 	}
 
   getCodeMaker(module){
     const makers = {
       controller: 'controllerMaker',
       service:    'serviceMaker',
-      extend:     'serviceMaker',
+      extend:     'extendMaker',
     }
     let maker = makers[module]
     if(typeof this[maker] != 'function'){

@@ -15,6 +15,7 @@ module.exports = appInfo => {
     service: {
 
     },
+    extend: {}
   }
   chohoTestCode(test)
   
