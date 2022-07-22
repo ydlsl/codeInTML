@@ -21,7 +21,7 @@ function TestBase({router, path, fn, method = 'get'}){
         //不给数据的情况
         .expect(200) // 期望返回的 status 200
         .then(response=>{ // 期望返回的 body，支持 string
-          const res = response.Data;
+          const res = response.body;
           assert(res.Code == '1002'); // 业务码应该为'0'
         }); 
     });
@@ -59,7 +59,7 @@ function TestBase({router, path, fn, method = 'get'}){
 //       //不给数据的情况
 //       .expect(200) // 期望返回的 status 200
 //       .then(response=>{ // 期望返回的 body，支持 string
-//         const res = response.Data;
+//         const res = response.body;
 //         assert(res.Code == '1002'); // 业务码应该为'0'
 //       }); 
 //   });
