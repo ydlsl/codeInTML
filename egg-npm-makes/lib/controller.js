@@ -34,7 +34,7 @@ function TestBase({router, path, fn, method = 'get'}){
           .expect(200) // 期望 200
           .then(response => {
             // response.Data
-            const res = response.Data;
+            const res = response.body;
             assert(res.Code == '0'); // 业务码应该为'0'
             // assert(res.Data.xxx);
             // assert(res.Data.xxx == item.expected);
@@ -72,7 +72,7 @@ function TestBase({router, path, fn, method = 'get'}){
 //         .expect(200) // 期望 200
 //         .then(response => {
 //           // response.Data
-//           const res = response.Data;
+//           const res = response.body;
 //           assert(res.Code == '0'); // 业务码应该为'0'
 //           // assert(res.Data.xxx);
 //           // assert(res.Data.xxx == item.expected);
