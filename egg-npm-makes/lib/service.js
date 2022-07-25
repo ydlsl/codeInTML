@@ -13,6 +13,8 @@ function TestBase({path, module, file, fn}){
       const ctx = app.mockContext(); // 实例得放在it内
       // ctx.request.query = {'asd': 12} //有用
       const res = await ctx.${module}.${file}.${fn}(params);
+      console.log('${module}.${fn} ', 'res = ', res)
+      //assert(res == '00')
       assert(!res)
     });
   
@@ -22,6 +24,8 @@ function TestBase({path, module, file, fn}){
         // ctx.request.body = {'asd': 12, 'ert': 456} //有用
         params = item.args
         const res = await ctx.${module}.${file}.${fn}(params);
+        console.log('${module}.${fn} p = ',item.args, 'res = ', res)
+        //assert(res == item.expected)
         assert(res)
         //assert(res.date)
       });
@@ -43,6 +47,8 @@ function TestBase({path, module, file, fn}){
 //     const ctx = app.mockContext(); // 实例得放在it内
 //     // ctx.request.query = {'asd': 12} //有用
 //     const res = await ctx.${module}.${file}.${fn}(params);
+//     console.log('${module}.${fn} ', 'res = ', res)
+//     //assert(res == '00')
 //     assert(!res)
 //   });
 
@@ -52,6 +58,8 @@ function TestBase({path, module, file, fn}){
 //       // ctx.request.body = {'asd': 12, 'ert': 456} //有用
 //       params = item.args
 //       const res = await ctx.${module}.${file}.${fn}(params);
+//       console.log('${module}.${fn} p = ',item.args, 'res = ', res)
+//       //assert(res == item.expected)
 //       assert(res)
 //       //assert(res.date)
 //     });

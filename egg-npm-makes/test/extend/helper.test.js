@@ -12,6 +12,8 @@ const { app, assert } = require('egg-mock/bootstrap');
       const ctx = app.mockContext(); // 实例得放在it内
       // ctx.request.query = {'asd': 12} //有用
       const res = await ctx.helper.getMd5Code(params);
+      console.log('getMd5Code ', 'res = ', res);
+      //assert(res == '')
       assert(!res)
     });
   
@@ -21,6 +23,8 @@ const { app, assert } = require('egg-mock/bootstrap');
         // ctx.request.body = {'asd': 12, 'ert': 456} //有用
         params = item.args
         const res = await ctx.helper.getMd5Code(params);
+        console.log('getMd5Code p = ',item.args, 'res = ', res);
+        //assert(res == item.expected)
         assert(res)
         //assert(res.date)
       });
@@ -39,6 +43,8 @@ const { app, assert } = require('egg-mock/bootstrap');
       const ctx = app.mockContext(); // 实例得放在it内
       // ctx.request.query = {'asd': 12} //有用
       const res = await ctx.helper.loggerInfo(params);
+      console.log('loggerInfo ', 'res = ', res);
+      //assert(res == '')
       assert(!res)
     });
   
@@ -48,6 +54,8 @@ const { app, assert } = require('egg-mock/bootstrap');
         // ctx.request.body = {'asd': 12, 'ert': 456} //有用
         params = item.args
         const res = await ctx.helper.loggerInfo(params);
+        console.log('loggerInfo p = ',item.args, 'res = ', res);
+        //assert(res == item.expected)
         assert(res)
         //assert(res.date)
       });

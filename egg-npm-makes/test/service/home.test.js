@@ -12,6 +12,8 @@ const { app, assert } = require('egg-mock/bootstrap');
       const ctx = app.mockContext(); // 实例得放在it内
       // ctx.request.query = {'asd': 12} //有用
       const res = await ctx.service.home.testForMocha(params);
+      console.log('service.testForMocha ', 'res = ', res)
+      //assert(res == '00')
       assert(!res)
     });
   
@@ -21,6 +23,8 @@ const { app, assert } = require('egg-mock/bootstrap');
         // ctx.request.body = {'asd': 12, 'ert': 456} //有用
         params = item.args
         const res = await ctx.service.home.testForMocha(params);
+        console.log('service.testForMocha p = ',item.args, 'res = ', res)
+        //assert(res == item.expected)
         assert(res)
         //assert(res.date)
       });
